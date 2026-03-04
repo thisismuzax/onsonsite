@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин женской базовой одежды ZEINA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .hero {
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .problem, .solution, .benefits, .process, .proof, .packages, .faq, .final-cta {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .cta {
+            text-align: center;
+            margin: 20px 0;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .leadform {
+            display: none;
+            text-align: center;
+        }
+        .leadform input, .leadform textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="hero">
+        <h1>Магазин женской базовой одежды ZEINA</h1>
+        <p>Получите качественные базовые вещи из натуральных тканей этим летом!</p>
+        <div class="cta">
+            <button onclick="document.getElementById('leadform').style.display='block';">Заказать сейчас</button>
+        </div>
+    </header>
+
+    <section class="problem">
+        <h2>Проблема</h2>
+        <p>Непонятно, что и как можно купить, все в перемешку. Заказ требует ожидания ответа от менеджера.</p>
+    </section>
+
+    <section class="solution">
+        <h2>Решение</h2>
+        <p>Вы можете получить красивую и качественную базовую одежду, которая состоит на 92% из хлопка и имеет актуальный фасон.</p>
+    </section>
+
+    <section class="benefits">
+        <h2>Преимущества</h2>
+        <p>1. Качество швов</p>
+        <p>2. Актуальность дизайна</p>
+        <p>3. Натуральный состав ткани</p>
+        <p>4. Удобная доставка</p>
+        <p>5. Возможность примерки</p>
+        <p>6. Гибкие способы оплаты</p>
+    </section>
+
+    <section class="process">
+        <h2>Как работаем</h2>
+        <p>Выбор товара, оформление заказа и быстрая доставка в течение дня. Курьер заранее звонит вам!</p>
+    </section>
+
+    <section class="proof">
+        <h2>Доверие</h2>
+        <p>Вы можете сначала увидеть отзывы клиентов и задать любые вопросы перед оформлением заказа.</p>
+    </section>
+
+    <section class="packages">
+        <h2>Пакеты/Цена</h2>
+        <p>Мы предлагаем удобные пакеты: Starter и Pro. Цены доступны и соответствуют рыночным стандартам.</p>
+    </section>
+
+    <section class="faq">
+        <h2>Часто задаваемые вопросы</h2>
+        <p>1. Как выбрать размер?</p>
+        <p>2. Какая доставка?</p>
+        <p>3. Как оплатить заказ?</p>
+        <p>4. Можно ли вернуть товар?</p>
+        <p>5. Как быстро придет заказ?</p>
+        <p>6. Есть ли у вас акции?</p>
+    </section>
+
+    <div id="leadform" class="leadform">
+        <h2>Форма заказа</h2>
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="tel" name="phone" placeholder="Ваш телефон" required>
+        <textarea name="message" placeholder="Ваше сообщение"></textarea>
+        <button onclick="submitForm(event)">Отправить заявку</button>
+    </div>
+
+    <section class="final-cta">
+        <h2>Готовы сделать заказ?</h2>
+        <div class="cta">
+            <button onclick="document.getElementById('leadform').style.display='block';">Заказать сейчас</button>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2023 Магазин ZEINA. Все права защищены.</p>
+</footer>
+
+<script>
+    function submitForm(event) {
+        event.preventDefault();
+        alert("Заявка отправлена! Мы свяжемся с вами.");
+        document.getElementById('leadform').style.display='none';
+    }
+</script>
+
+</body>
+</html>
